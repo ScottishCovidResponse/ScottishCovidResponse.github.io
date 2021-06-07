@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SCRC docs</title>
+    <link>https://scottishcovidresponse.github.io/docs/research/</link>
+    <description>Recent content on SCRC docs</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://scottishcovidresponse.github.io/docs/research/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Systematic literature review</title>
+      <link>https://scottishcovidresponse.github.io/docs/research/literature/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scottishcovidresponse.github.io/docs/research/literature/</guid>
+      <description>SCRC procedure for systematised literature review v1.2 #  Iain McKendrick, 19/06/2020
+The purpose of this procedure is to outline an approach to systematised literature searches to obtain parameters and distributions for SCRC models.
+SCRC lacks capacity to carry out comprehensive reviews ourselves; therefore we seek to find the most salient readily available data, focussing on other people’s reviews, papers cited in these, and the papers underpinning other major modelling exercises.</description>
+    </item>
+    
+  </channel>
+</rss>

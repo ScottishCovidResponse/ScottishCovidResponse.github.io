@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introduction on SCRC docs</title>
+    <link>https://scottishcovidresponse.github.io/</link>
+    <description>Recent content in Introduction on SCRC docs</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://scottishcovidresponse.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Available data</title>
+      <link>https://scottishcovidresponse.github.io/docs/data/available_data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scottishcovidresponse.github.io/docs/data/available_data/</guid>
+      <description>Available data #  The following data products are available in the data registry. Each of the following entries includes a brief description of the dataset, the date this descrition was entered, any links to additional information, and the name of the data product in the data registry.
+Population estimates #   Scotland National Records of Scotland mid-2018 small area population estimates for Scotland, by single year of age, for males, females and persons, for 2011 data zones and council areas.</description>
+    </item>
+    
+    <item>
+      <title>List of SCRC Models</title>
+      <link>https://scottishcovidresponse.github.io/docs/models/summary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scottishcovidresponse.github.io/docs/models/summary/</guid>
+      <description>List of SCRC Models #     Model Name Short Description Language Additional Information      BEEPmbp Bayesian Estimation of Epidemic Parameters using Model Based Proposals for MCMC C++  Software Checklist    Contact-Tracing-Model Derived from the FMD model and contact data from Sibylle Java  Software Checklist    Covid19_EERAModel Simple COVID-19 simulation model with ABC-smc inference C++  Software Checklist    Covid_Simulation_Model Models spread of COVID-19 through a community by stochastic simulation of the movements and interactions of people Java  Software Checklist    Simple Network Sim Adaptation of a simple network simulation model to COVID-19 Python  Software Checklist, Developer documentation    Simulation.</description>
+    </item>
+    
+    <item>
+      <title>Systematic literature review</title>
+      <link>https://scottishcovidresponse.github.io/docs/research/literature/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scottishcovidresponse.github.io/docs/research/literature/</guid>
+      <description>SCRC procedure for systematised literature review v1.2 #  Iain McKendrick, 19/06/2020
+The purpose of this procedure is to outline an approach to systematised literature searches to obtain parameters and distributions for SCRC models.
+SCRC lacks capacity to carry out comprehensive reviews ourselves; therefore we seek to find the most salient readily available data, focussing on other people’s reviews, papers cited in these, and the papers underpinning other major modelling exercises.</description>
+    </item>
+    
+    <item>
+      <title>Data sources and products</title>
+      <link>https://scottishcovidresponse.github.io/docs/data/sources_and_products/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scottishcovidresponse.github.io/docs/data/sources_and_products/</guid>
+      <description>Data sources and products #  The following information was compiled in July 2020
+Administrative spatial scales in UK #  The UK is split into different levels of administrative areas and differing amounts of data are available at these different spatial scales. Different government agencies are responsible for the different countries and data may need to be sourced from these different sources.
+Top level – UK is split into four Countries: England, Scotland, Wales and Northern Ireland.</description>
+    </item>
+    
+    <item>
+      <title>Model parameters</title>
+      <link>https://scottishcovidresponse.github.io/docs/data/model_parameters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scottishcovidresponse.github.io/docs/data/model_parameters/</guid>
+      <description>Parameter Source LSHTM Simulation.jl     Latent period 2, 3, 4    \[ \footnotesize{d_E: \Gamma(\mu=4.0,k=4)} \]   -   Pre-Clinical Infectiousness Duration 5  \[ \footnotesize{d_P: \Gamma(\mu=1.5,k=4)} \]   -   Clinical Infectiousness Duration 2, 3, 4  \[ \footnotesize{d_C: \Gamma(\mu=3.5,k=4)} \]   -   Subclinical Infectiousness Duration Assumed to be the same duration as total infectious period for clinical cases, including preclinical transmission 1  \[ \footnotesize{d_S: \Gamma(\mu=5.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html data-scroll='0' lang="en" dir= >
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="SCRC procedure for systematised literature review v1.2 #  Iain McKendrick, 19/06/2020
+The purpose of this procedure is to outline an approach to systematised literature searches to obtain parameters and distributions for SCRC models.
+SCRC lacks capacity to carry out comprehensive reviews ourselves; therefore we seek to find the most salient readily available data, focussing on other people’s reviews, papers cited in these, and the papers underpinning other major modelling exercises.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Systematic literature review" />
+<meta property="og:description" content="SCRC procedure for systematised literature review v1.2 #  Iain McKendrick, 19/06/2020
+The purpose of this procedure is to outline an approach to systematised literature searches to obtain parameters and distributions for SCRC models.
+SCRC lacks capacity to carry out comprehensive reviews ourselves; therefore we seek to find the most salient readily available data, focussing on other people’s reviews, papers cited in these, and the papers underpinning other major modelling exercises." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://scottishcovidresponse.github.io/docs/research/literature/" /><meta property="article:section" content="docs" />
+
+<meta property="article:modified_time" content="2021-04-08T09:31:05&#43;01:00" />
+
+<title>Systematic literature review | SCRC docs</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.d37909054a533a0d30500c5f494fcdad35c1da3e92cfe5bf2e8ba94f34845feb.css" integrity="sha256-03kJBUpTOg0wUAxfSU/NrTXB2j6Sz&#43;W/LoupTzSEX&#43;s=">
+<script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk="></script>
+<!--
+Made with Book Theme
+https://github.com/RyanJField/hugo-book
+-->
+  
+  
+<script defer type="text/javascript" src="/lunr.min.js"></script>
+
+<script defer src="/en.fancy-search.min.4cee0cf6f6eb03a5cca70239678bdbf391bee30d4a0159235ce7efa308eb5ec7.js" integrity="sha256-TO4M9vbrA6XMpwI5Z4vb85G&#43;4w1KAVkjXOfvowjrXsc="></script>
+<script defer src="/scroll.js"></script>
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+
+  
+  <div class="custom-header">  
+    <div class="custom-flex container flex">
+      <div class="custom-left">
+        <div class="custom-brand">
+          <h2 class="custom-brand-text">
+            <a href="/"><img src="/logo.jpg" alt="Logo" /><span>SCRC docs</span>
+            </a>
+          </h2>
+          </div> 
+        </div>  
+      <div class ="custom-search-container">
+        
+<div class="search-top">
+    <div class="search">
+        <div class="search-input-wrap">
+            <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search SCRC docs" aria-label="Search SCRC docs" autocomplete="off">
+            <label for="search-input" class="search-label">
+              <div class="search-svg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+            </label>
+        </div>
+        <div id="search-results" class="search-results"></div>
+    </div>
+</div>
+
+      </div>
+    </div>    
+  </div>
+  
+
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <span>Data</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/data/available_data/" class="">Available data</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/data/sources_and_products/" class="">Data sources and products</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/data/model_parameters/" class="">Model parameters</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/data_pipeline/" class="">Data Pipeline</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <span>Research</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/research/literature/" class="active">Systematic literature review</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <span>Models</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/models/summary/" class="">List of SCRC Models</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/edit-site/" class="">Edit this site</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://www.gla.ac.uk/research/az/scrc/" target="_blank" rel="noopener">
+        SCRC UoG
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://data.scrc.uk/" target="_blank" rel="noopener">
+        Data Registry
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Systematic literature review</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+  
+  <aside class="hidden clearfix">
+    
+  <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#scrc-procedure-for-systematised-literature-review-v12">SCRC procedure for systematised literature review v1.2</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h2 id="scrc-procedure-for-systematised-literature-review-v12">
+  SCRC procedure for systematised literature review v1.2
+  <a class="anchor" href="#scrc-procedure-for-systematised-literature-review-v12">#</a>
+</h2>
+<p><sub>Iain McKendrick, 19/06/2020</sub></p>
+<p><strong>The purpose of this procedure is to outline an approach to systematised literature searches to obtain parameters and distributions for SCRC models.</strong></p>
+<p>SCRC lacks capacity to carry out comprehensive reviews ourselves; therefore we seek to find the most salient readily available data, focussing on other people’s reviews, papers cited in these, and the papers underpinning other major modelling exercises.</p>
+<p>The systematised procedure to identify and process these is as follows:</p>
+<ol>
+<li>
+<p>Based on the needs of the models, encourage focus on a series of specific questions (eg what is the incubation period?)  We believe this is best practice, as advised by the experience of the Irish team.  In the first instance, this should be informed by the specifications from each model stored in MS Teams /General/Modelling/model-parameters and the unified compartment approach based on the Irish work.  Questions are most likely to be specified by the Epidemiology team.</p>
+</li>
+<li>
+<p>Inclusion and exclusion criteria for studies are as follows:</p>
+<ol>
+<li>Quality of research design: official government data; formal randomised study; census of sub-population (eg contact tracing); observational study are optimal.  Convenience samples are least acceptable.</li>
+<li>Dates study was conducted (if relevant)</li>
+<li>Geographic region (if relevant)</li>
+<li>Social/Legal conditions (eg during what type of societal intervention) (if relevant)</li>
+<li>Where these can be identified in advance, special cases of the parameter class should be specified (eg incubation period for asymptomatic as opposed to symptomatic individuals)</li>
+<li>These criteria should be adapted as required for different questions.</li>
+</ol>
+</li>
+<li>
+<p>Search the following resources:</p>
+<ol>
+<li>LitCovid, Cochrane COVID-19 and Edinburgh University Repository of Systematic Reviews databases, looking for well conducted reviews.</li>
+<li>McMaster; this provides pointers to different key resources for COVID-19 evidence, including appraised studies and reviews. This list of resources will be quite comprehensive.</li>
+<li>Collations of ‘grey’ literature: MedRxiv (note MedRxiv materials are pre-prints, and hence have not been peer reviewed; they cover all articles and hence are not necessarily reviews) <a href="https://connect.medrxiv.org/relate/content/181">https://connect.medrxiv.org/relate/content/181</a> .  In addition we can access the SRUC collated list of reports and papers.</li>
+<li>Prospero is a database of protocols of registered systematic reviews. Prospero can be used to see if a review is underway and when it is likely to give results.  This is particularly important if information is otherwise lacking, but also has a more general utility.</li>
+<li>Relevant reports/publications on the ‘approved list’ of equivalent mathematical models (Currently the Irish group, Imperial, LSTMH, SCoVMod.  Likely to be extended to all documents in DDI Project Repo B).</li>
+<li>Primary papers and reports identified or used in a secondary review or model paper identified under criteria 3.1-3.5 above, where the secondary document does not itself produce a relevant data product different to that in the primary document.</li>
+<li>Estimates extracted from secondary or primary literature reviewed as part of a pathway arising from criterion 3.5 should be flagged as not having been independently identified.  A flag to this effect is included in the Extraction sheet.</li>
+<li>To elaborate on criterion 3.6: a (secondary) paper reporting a meta-analysis generates a new product which should be reported in preference to any of the primary estimates used in the analysis.  A peer-reviewed paper which assesses the validity of estimates from the grey literature is generating new products with superior provenance to the originals, since the former have been peer reviewed.  Hence the products from the secondary paper should be reported in preference.  However, a paper which merely lists parameter estimates from other papers, although useful as a platform to identify potentially relevant primary estimates, should not be used as the basis of a data extraction.</li>
+</ol>
+</li>
+<li>
+<p>Data extraction sheet for papers to map to requirements in data registry; including fields for quality of review/study, the suitability of the estimation methods for parameter of interest, and the generalizability/applicability of the products.</p>
+<ol>
+<li>Quality of Estimate: Score as Good/Potentially Good, but not Peer-Reviewed/Adequate/Poor, taking account of assessed quality of review/study and assessed suitability of the estimation methods for parameter of interest.  Only documents which have been subject to peer review can be scored as Good.</li>
+<li>Generalizability/applicability of products: Score as Universal/Partial/Low
+<ol>
+<li>Universal means that the quantity is applicable in all contexts.  For example, an estimate of incubation period in adults might be designated as universal since it is believed relevant to all such individuals.</li>
+<li>Partial means that the quantity is applicable in some modelling contexts, but not in others.  For example, an estimate of infection rate in London might be designated as partial since it is might be generalised as relevant to urban areas but not to rural, or not generalizable at all, in which case it would still be relevant to any model which modelled London separately.  Operationally, this should serve as a warning to the modellers to carefully consider the context in which the estimate is used.  It’s applicability is limited in some way, and so consideration should be given to its validity in any specific context.</li>
+<li>Low means that the applicability to any likely SCRC activity is consistently weak. For example, estimates of mortality derived from Wuhan in the earliest days of the outbreak are arguably irrelevant now.</li>
+</ol>
+</li>
+<li>Ways in which the estimate fails to generalise should be recorded as important aspects of the narrative attached to the estimate.</li>
+<li>These are assessed properties of the estimate.   ‘Fitness for Purpose’ is a derived property which seeks, on the basis of these assessed properties, as they apply to all SCRC models, to assign a status to the estimate, flagging priorities for further research.</li>
+</ol>
+</li>
+<li>
+<p>Flag parameters with derived assessment of ‘Fitness for Purpose’.  We propose 4 ordered categories.  The default values are:</p>
+<ol>
+<li>If the parameter estimate is not subject to any serious concerns and as such is unlikely to be improved upon, (Quality=Good; Applicability=Universal), it should be given a Green rating.  The existence of such an estimate means that this parameter class would not be a priority for further research.</li>
+<li>If a parameter estimate has mild quality concerns recorded against it, (Quality=Adequate.OR.Potentially Good; Applicability=Universal), it should be given an Amber rating.  If a better estimate emerges, it should be evaluated and potentially adopted for use, but this parameter class will not be a priority for further research.  If (Applicability=Partial)&amp;(Quality&gt;Poor), it should be given an Amber rating.  The assumption is that it will not be a priority for further research per se, although a modeller who assesses it as not applicable to their model might chose to request research on a similar, but more tightly defined new parameter product.</li>
+<li>If a parameter estimate has applicability concerns recorded, (Applicability=Low), it should be given a Red rating.   The desirability of finding a better estimate should be flagged as a task to literature reviewers to check for up-to-date reviews/further studies.  Ditto if Quality = Poor.</li>
+<li>If a parameter estimate has concerns recorded against it, which are so severe that it should not be used in preference to other available more highly rated data products, or that it has been superseded in some way, it should be given a Black rating, and this status propagated to all dependent products.</li>
+</ol>
+</li>
+<li>
+<p>Source document should be uploaded to the SCRC MS Teams Literature Review Channel. <strong>Folder structure TBC</strong>.  Files should be named consistently.  File names should be short but descriptive (Preferably &lt;30 characters).  Do not use special characters or spaces in a file name: use capitals and underscores instead of periods or spaces or slashes. Dates are unlikely to be useful, but if used, should be in ISO 8601 date format: YYYYMMDD.</p>
+</li>
+</ol>
+<p>Format should be:</p>
+<p><code>[Reviewer Surname]_[First Author Surname]_[Journal Name Abbreviation or Source Abbreviation]_[Final block of DOI if applicable]</code></p>
+<table> 
+    <tr>
+        <thead>  
+            <th>Fitness for Purpose</th> 
+            <th scope="col" colspan="3">Applicability</th> 
+        </thead>
+    </tr> 
+    <tr> 
+        <thead>  
+            <th>Quality</th> 
+            <th>Universal</th> 
+            <th>Partial</th> 
+            <th>Low</th> 
+        </thead>
+    </tr>  
+    <tr> 
+        <td>Good</td> 
+        <td style="background-color:#31a354"></td> 
+        <td style="background-color:#fec44f"></td> 
+        <td style="background-color:#f03b20"></td> 
+    </tr> 
+    <tr> 
+        <td>Potentially Good</td> 
+        <td style="background-color:#fec44f"></td> 
+        <td style="background-color:#fec44f"></td> 
+        <td style="background-color:#f03b20"></td> 
+    </tr> 
+    <tr> 
+        <td>Adequate</td> 
+        <td style="background-color:#fec44f"></td> 
+        <td style="background-color:#fec44f"></td> 
+        <td style="background-color:#f03b20"></td> 
+    </tr> 
+    <tr> 
+        <td>Poor</td> 
+        <td style="background-color:#f03b20"></td> 
+        <td style="background-color:#f03b20"></td> 
+        <td style="background-color:#f03b20"></td> 
+    </tr> 
+</table>
+<p><strong>Annex. Links to Databases:</strong> There is likely to be a significant overlap in all these resources.</p>
+<p>
+  <a href="https://www.ncbi.nlm.nih.gov/research/coronavirus/faq">LitCovid</a> - data from PubMed, updated daily. No pre-prints.</p>
+<p>
+  <a href="https://plus.mcmaster.ca/COVID-19/About">McMaster</a>. This is an alerting service which curates and assesses publications about Covid, indexed in MEDLINE, that meet their defined scientific criteria. They </p>
+<p>
+  <a href="https://www.cochrane.org/coronavirus-covid-19-cochrane-resources-and-news">Cochrane Study Register</a>. This covers ClinicalTrials.gov, WHO International Trials Registry Platform (ICTRP) and PubMed.</p>
+<p>
+  <a href="https://www.ed.ac.uk/usher/uncover/register-of-reviews">Edinburgh Uni hosted Repository of Systematic Reviews</a></p>
+<p>
+  <a href="https://www.crd.york.ac.uk/prospero/">Prospero</a></p>
+<p>
+  <a href="https://community.cochrane.org/about-covid-19-study-register">Clinical trials and Pubmed</a> updated daily. ICTRP weekly.</p>
+<p>Annex: Draft Data extraction sheet (<a href="https://forms.gle/E4YgYS9Zvckmc9R58">https://forms.gle/E4YgYS9Zvckmc9R58</a>)</p>
+<table>
+    <tr>
+        <td>Field</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Short Descriptor of Information Extracted</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Detailed Description of Information Extracted</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Point estimate (if available)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Uncertainty/variability metrics  (Best of: None/Interval/Distribution specification: distribution and parameters or Empirical distribution)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Title of Paper/Report</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Authors</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOI</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Uploaded to MSTeams?</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Identification Route (eg LitCOVID; MedRxiv)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Potential Lack of Independence in Parameter Estimate</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Status (Peer reviewed/Official Report/Preprint/Other)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Intrinsic Quality of Estimate</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Comments on Intrinsic Quality</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Tag this Document for Further, Future Review?</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Applicability (Generalizability)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Narrative: Lack of Applicability</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Fitness for Purpose</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Primary Data Availability</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Primary Data Location</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Reviewer Name</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Date Logged</td>
+        <td></td>
+    </tr>
+</table>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+  <div><a class="flex align-center" href="https://github.com/ScottishCovidResponse/hugo_source_files/commit/70047b0da869709331ef08a27685ff20af67d755" title='Last modified by soniamitchell | April 8, 2021' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>April 8, 2021</span>
+    </a>
+  </div>
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/ScottishCovidResponse/hugo_source_files/tree/master/content//docs/research/literature.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#scrc-procedure-for-systematised-literature-review-v12">SCRC procedure for systematised literature review v1.2</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+

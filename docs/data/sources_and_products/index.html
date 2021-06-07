@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html data-scroll='0' lang="en" dir= >
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Data sources and products #  The following information was compiled in July 2020
+Administrative spatial scales in UK #  The UK is split into different levels of administrative areas and differing amounts of data are available at these different spatial scales. Different government agencies are responsible for the different countries and data may need to be sourced from these different sources.
+Top level – UK is split into four Countries: England, Scotland, Wales and Northern Ireland.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Data sources and products" />
+<meta property="og:description" content="Data sources and products #  The following information was compiled in July 2020
+Administrative spatial scales in UK #  The UK is split into different levels of administrative areas and differing amounts of data are available at these different spatial scales. Different government agencies are responsible for the different countries and data may need to be sourced from these different sources.
+Top level – UK is split into four Countries: England, Scotland, Wales and Northern Ireland." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://scottishcovidresponse.github.io/docs/data/sources_and_products/" /><meta property="article:section" content="docs" />
+
+<meta property="article:modified_time" content="2021-03-30T16:38:46&#43;01:00" />
+
+<title>Data sources and products | SCRC docs</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.d37909054a533a0d30500c5f494fcdad35c1da3e92cfe5bf2e8ba94f34845feb.css" integrity="sha256-03kJBUpTOg0wUAxfSU/NrTXB2j6Sz&#43;W/LoupTzSEX&#43;s=">
+<script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk="></script>
+<!--
+Made with Book Theme
+https://github.com/RyanJField/hugo-book
+-->
+  
+  
+<script defer type="text/javascript" src="/lunr.min.js"></script>
+
+<script defer src="/en.fancy-search.min.4cee0cf6f6eb03a5cca70239678bdbf391bee30d4a0159235ce7efa308eb5ec7.js" integrity="sha256-TO4M9vbrA6XMpwI5Z4vb85G&#43;4w1KAVkjXOfvowjrXsc="></script>
+<script defer src="/scroll.js"></script>
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+
+  
+  <div class="custom-header">  
+    <div class="custom-flex container flex">
+      <div class="custom-left">
+        <div class="custom-brand">
+          <h2 class="custom-brand-text">
+            <a href="/"><img src="/logo.jpg" alt="Logo" /><span>SCRC docs</span>
+            </a>
+          </h2>
+          </div> 
+        </div>  
+      <div class ="custom-search-container">
+        
+<div class="search-top">
+    <div class="search">
+        <div class="search-input-wrap">
+            <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search SCRC docs" aria-label="Search SCRC docs" autocomplete="off">
+            <label for="search-input" class="search-label">
+              <div class="search-svg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+            </label>
+        </div>
+        <div id="search-results" class="search-results"></div>
+    </div>
+</div>
+
+      </div>
+    </div>    
+  </div>
+  
+
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <span>Data</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/data/available_data/" class="">Available data</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/data/sources_and_products/" class="active">Data sources and products</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/data/model_parameters/" class="">Model parameters</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/data_pipeline/" class="">Data Pipeline</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <span>Research</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/research/literature/" class="">Systematic literature review</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <span>Models</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/models/summary/" class="">List of SCRC Models</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/edit-site/" class="">Edit this site</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://www.gla.ac.uk/research/az/scrc/" target="_blank" rel="noopener">
+        SCRC UoG
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://data.scrc.uk/" target="_blank" rel="noopener">
+        Data Registry
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Data sources and products</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+  
+  <aside class="hidden clearfix">
+    
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#data-sources-and-products">Data sources and products</a>
+      <ul>
+        <li><a href="#administrative-spatial-scales-in-uk">Administrative spatial scales in UK</a>
+          <ul>
+            <li><a href="#england--wales-onshttpswwwonsgovuk">England &amp; Wales <a href="https://www.ons.gov.uk/">ONS</a></a></li>
+            <li><a href="#scotland-nrshttpswwwnrscotlandgovuk-">Scotland <a href="https://www.nrscotland.gov.uk/">NRS</a></a></li>
+          </ul>
+        </li>
+        <li><a href="#epidemic-data">Epidemic data</a></li>
+        <li><a href="#sources-of-review-articles-and-literature-for-epidemic-parameters">Sources of review articles and literature for epidemic parameters</a></li>
+        <li><a href="#literature-searches-in-progress">Literature searches in progress</a></li>
+        <li><a href="#information-about-serology-based-tests-for-covid-19">Information about serology-based tests for COVID-19</a></li>
+        <li><a href="#ons-coronavirus-infection-survey-pilot">ONS Coronavirus infection survey pilot</a></li>
+        <li><a href="#health-data-sources-for-progress-of-covid-19-epidemic-in-uk">Health Data sources for progress of COVID-19 epidemic in UK</a></li>
+        <li><a href="#data-available-at-high-level-spatial-scale-and-no-social-stratification">Data Available at high level spatial scale and no social stratification</a></li>
+        <li><a href="#other-sources-of-data">Other Sources of data</a></li>
+        <li><a href="#data-available-with-social-factors">Data available with social factors</a></li>
+        <li><a href="#hospitalisations-testing-and-other-management-data-available--scotland">Hospitalisations, testing and other management data available – SCOTLAND</a></li>
+        <li><a href="#individual-level-hospitalisations-testing-and-other-health-data--scotland">Individual level Hospitalisations, testing and other health data – SCOTLAND</a></li>
+        <li><a href="#summary-of-variables-requested-and-possible-data-products">Summary of variables requested and possible data products</a></li>
+        <li><a href="#demographic-data-sources">Demographic data sources</a></li>
+        <li><a href="#other-data-sources">Other data sources</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="data-sources-and-products">
+  Data sources and products
+  <a class="anchor" href="#data-sources-and-products">#</a>
+</h1>
+<p>The following information was compiled in July 2020</p>
+<h2 id="administrative-spatial-scales-in-uk">
+  Administrative spatial scales in UK
+  <a class="anchor" href="#administrative-spatial-scales-in-uk">#</a>
+</h2>
+<p>The UK is split into different levels of administrative areas and differing amounts of data are available at these different spatial scales. Different government agencies are responsible for the different countries and data may need to be sourced from these different sources.</p>
+<p><strong>Top level</strong> – UK is split into four Countries: England, Scotland, Wales and Northern Ireland.</p>
+England &amp; Wales <h3 id="england--wales-onshttpswwwonsgovuk">
+  
+  <a href="https://www.ons.gov.uk/">ONS</a>
+  <a class="anchor" href="#england--wales-onshttpswwwonsgovuk">#</a>
+</h3>
+<table>
+<thead>
+<tr>
+<th>Spatial Scale</th>
+<th>Average Population Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Regions</td>
+<td>6.2 Million</td>
+</tr>
+<tr>
+<td>Upper Tier Local Authorities (UTLA)</td>
+<td>1.8 Million</td>
+</tr>
+<tr>
+<td>Lower Tier Local Authorities (LTLA)</td>
+<td>300,000</td>
+</tr>
+<tr>
+<td>Middle Super Output Areas (MSOA)</td>
+<td>7500</td>
+</tr>
+<tr>
+<td>Lower Super Output Areas (LSOA)</td>
+<td>1500</td>
+</tr>
+</tbody>
+</table>
+Scotland <h3 id="scotland-nrshttpswwwnrscotlandgovuk-">
+  
+  <a href="https://www.nrscotland.gov.uk/">NRS</a>
+  <a class="anchor" href="#scotland-nrshttpswwwnrscotlandgovuk-">#</a>
+</h3>
+<table>
+<thead>
+<tr>
+<th>Spatial Scale</th>
+<th>Average Population Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Health Boards</td>
+<td>390,236</td>
+</tr>
+<tr>
+<td>Local Authorities</td>
+<td>170,728</td>
+</tr>
+<tr>
+<td>Datazones</td>
+<td>800</td>
+</tr>
+<tr>
+<td>Output Areas</td>
+<td>150</td>
+</tr>
+</tbody>
+</table>
+<p>The 
+  <a href="https://geoportal.statistics.gov.uk/">Open Geography portal</a> from the Office for National Statistics (ONS) provides free and open access to the definitive source of geographic products.</p>
+<h2 id="epidemic-data">
+  Epidemic data
+  <a class="anchor" href="#epidemic-data">#</a>
+</h2>
+<p>Data, parameter estimates and distributions about the epidemic from literature sources.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Reference</th>
+<th>DOI</th>
+<th>Available</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0/R</td>
+<td>Barber</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Latent period &amp; relative importance of pre-symptomatic period</td>
+<td>Casey et al. Pre-symptomatic transmission of SARS-CoV-2 infection: a secondary analysis using published data</td>
+<td>
+  <a href="https://www.medrxiv.org/content/10.1101/2020.05.08.20094870v2">10.1101/2020.05.08.20094870v2</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Incubation period</td>
+<td>McAloon et al. The incubation period of COVID-19: A rapid systematic review and meta-analysis of observational research</td>
+<td>
+  <a href="https://www.medrxiv.org/content/10.1101/2020.04.24.20073957v1">10.1101/2020.04.24.20073957v1</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Generation time &amp; serial interval</td>
+<td>Griffin et al. A rapid review of available evidence on the serial interval and generation time of COVID-19</td>
+<td>
+  <a href="https://www.medrxiv.org/content/10.1101/2020.05.08.20095075v1">10.1101/2020.05.08.20095075v1</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Proportion of infected who are asymptomatic, by age</td>
+<td>Casey et al.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Length of infectious period in asymptomatic people and in symptomatic people who do not isolate</td>
+<td>Byrne et al. Inferred duration of infectious period of SARS-CoV-2: rapid scoping review and analysis of available evidence for asymptomatic and symptomatic COVID-19 cases</td>
+<td>
+  <a href="https://www.medrxiv.org/content/10.1101/2020.04.25.20079889v1">10.1101/2020.04.25.20079889v1</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Time from onset of symptoms to diagnosis/test results and to hospitalisation</td>
+<td>Byrne et al.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Length of hospital stay and admission to ICUs</td>
+<td>Lane et al. Country differences in hospitalisation, length of stay, admission to Intensive Care Units, and mortality due to SARS-CoV-2 infection at the end of the first wave in Europe: a rapid review of available literature</td>
+<td>
+  <a href="https://www.medrxiv.org/content/10.1101/2020.05.12.20099473v2">10.1101/2020.05.12.20099473v2</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Relative infectiousness of asymptomatic versus symptomatic infected people</td>
+<td>McAloon et al.</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="sources-of-review-articles-and-literature-for-epidemic-parameters">
+  Sources of review articles and literature for epidemic parameters
+  <a class="anchor" href="#sources-of-review-articles-and-literature-for-epidemic-parameters">#</a>
+</h2>
+<ol>
+<li>
+<p>The following 
+  <a href="https://arxiv.org/abs/2006.01283">paper</a> contains information collated from the literature about epidemic parameters. Yinon M. Bar-On, Ron Sender, Avi I. Flamholz, Rob Phillips, Ron Milo. A quantitative compendium of COVID-19 epidemiology. arXiv:2006.01283. It is currently a pre-print, so use with care.</p>
+</li>
+<li>
+<p>
+  <a href="https://www.kaggle.com/covid-19-contributions">Website</a> from US government that contains literature reviews and data extraction for parameters for a number of measures about the natural history of COVID-19. It uses a combination of AI and human intervention to scrape the literature.</p>
+</li>
+</ol>
+<h2 id="literature-searches-in-progress">
+  Literature searches in progress
+  <a class="anchor" href="#literature-searches-in-progress">#</a>
+</h2>
+<table>
+<thead>
+<tr>
+<th>Topic</th>
+<th>Searching &amp; Screening</th>
+<th>Quality checking &amp; synthesising</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Asymptomatic</td>
+<td>In progress</td>
+<td>In progress</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="information-about-serology-based-tests-for-covid-19">
+  Information about serology-based tests for COVID-19
+  <a class="anchor" href="#information-about-serology-based-tests-for-covid-19">#</a>
+</h2>
+<p>This 
+  <a href="https://www.centerforhealthsecurity.org/resources/COVID-19/serology/Serology-based-tests-for-COVID-19.html#sec3">website</a> collates type of testing in use by country, including sensitivity and specificity, where available.</p>
+<p>Latent-class 
+  <a href="https://www.researchsquare.com/article/rs-33243/v1">meta-analysis</a> estimating sensitivity and specificity for COVID diagnostics DOI: 10.21203/rs.3.rs-33243/v1</p>
+<h2 id="ons-coronavirus-infection-survey-pilot">
+  ONS Coronavirus infection survey pilot
+  <a class="anchor" href="#ons-coronavirus-infection-survey-pilot">#</a>
+</h2>
+<p>This is a 
+  <a href="https://www.medrxiv.org/content/10.1101/2020.07.06.20147348v1.full.pdf">national survey</a> (England), collecting throat and nose swabs and accompanying data from individuals in households across England, estimates the prevalence and incidence of SARS-CoV-2 in the community in England.</p>
+<h2 id="health-data-sources-for-progress-of-covid-19-epidemic-in-uk">
+  Health Data sources for progress of COVID-19 epidemic in UK
+  <a class="anchor" href="#health-data-sources-for-progress-of-covid-19-epidemic-in-uk">#</a>
+</h2>
+<p>Data requirements and sources about the progress of the epidemic in UK (including Scotland). These data are available at different spatial scales and stratified by social factors (eg age, sex, area deprivation, ethnicity). As these are classified as personal data, it may be necessary to obtain special permission to access the data. Permissions will be required for individual level data, finer spatial scales and more stratifications.</p>
+<p>Health data are produced separately for Scotland, England and Wales. Public Health England.</p>
+<p>UK Government host a 
+  <a href="https://coronavirus.data.gov.uk/">website</a> containing higher spatial scales and stratifications for all UK Countries. The website contains definitions and meta-data for all countries and variables.</p>
+<h2 id="data-available-at-high-level-spatial-scale-and-no-social-stratification">
+  Data Available at high level spatial scale and no social stratification
+  <a class="anchor" href="#data-available-at-high-level-spatial-scale-and-no-social-stratification">#</a>
+</h2>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Spatial Scale</th>
+<th>URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Daily Deaths</td>
+<td>UK, England, Scotland, Wales, NI</td>
+<td><a href="https://coronavirus.data.gov.uk/">https://coronavirus.data.gov.uk/</a></td>
+</tr>
+<tr>
+<td>Daily Deaths</td>
+<td>Upper Tier LA, Lower Tier LA [England Only]</td>
+<td><a href="https://coronavirus.data.gov.uk/">https://coronavirus.data.gov.uk/</a></td>
+</tr>
+<tr>
+<td>Lab Confirmed Cases</td>
+<td>UK, England, Scotland, Wales, NI</td>
+<td><a href="https://coronavirus.data.gov.uk/">https://coronavirus.data.gov.uk/</a></td>
+</tr>
+<tr>
+<td>Lab Confirmed Cases</td>
+<td>Upper Tier LA, Lower Tier LA [England Only]</td>
+<td><a href="https://coronavirus.data.gov.uk/">https://coronavirus.data.gov.uk/</a></td>
+</tr>
+<tr>
+<td>COVID-19 patients admitted to hospital</td>
+<td>UK, England, Scotland, Wales, NI, England NHS Regions</td>
+<td><a href="https://coronavirus-staging.data.gov.uk/">https://coronavirus-staging.data.gov.uk/</a></td>
+</tr>
+<tr>
+<td>COVID-19 patients currently in hospital</td>
+<td>UK, England, Scotland, Wales, NI, England NHS Regions</td>
+<td><a href="https://coronavirus-staging.data.gov.uk/">https://coronavirus-staging.data.gov.uk/</a></td>
+</tr>
+<tr>
+<td>Patients on ventilation</td>
+<td>UK, England, Scotland, Wales, NI, England NHS Regions</td>
+<td><a href="https://coronavirus-staging.data.gov.uk/">https://coronavirus-staging.data.gov.uk/</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="other-sources-of-data">
+  Other Sources of data
+  <a class="anchor" href="#other-sources-of-data">#</a>
+</h2>
+<p>
+  <a href="https://www.england.nhs.uk/statistics/statistical-work-areas/covid-19-daily-deaths/">NHS England - daily deaths</a></p>
+<p>
+  <a href="https://www.england.nhs.uk/statistics/statistical-work-areas/covid-19-hospital-activity/">NHS England - hospital activity</a></p>
+<h2 id="data-available-with-social-factors">
+  Data available with social factors
+  <a class="anchor" href="#data-available-with-social-factors">#</a>
+</h2>
+<p>
+  <a href="https://statistics.gov.scot/resource?uri=http%3A%2F%2Fstatistics.gov.scot%2Fdata%2Fdeaths-involving-coronavirus-covid-19">Scotland</a></p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Spatial Scale</th>
+<th>Social Factors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Weekly Deaths – All Cause</td>
+<td>Scotland, Health Board, Local Authority</td>
+<td><strong>Age</strong>: &lt;1, 1-14, 15-44, 45-64, 65-74, 75-84, 85+ <br> <strong>Sex</strong>: Male, Female <br> <strong>Location</strong>: Care Home, Home/Non-institution, Hospital, Other institution</td>
+</tr>
+<tr>
+<td>Weekly Deaths – All Cause (average over previous 5 years)</td>
+<td>Scotland, Health Board, Local Authority</td>
+<td><strong>Age</strong>: &lt;1, 1-14, 15-44, 45-64, 65-74, 75-84, 85+ <br> <strong>Sex</strong>: Male, Female <br> <strong>Location</strong>: Care Home, Home/Non-institution, Hospital, Other institution</td>
+</tr>
+<tr>
+<td>Weekly Deaths – COVID-19 related</td>
+<td>Scotland, Health Board, Local Authority</td>
+<td><strong>Age</strong>: &lt;1, 1-14, 15-44, 45-64, 65-74, 75-84, 85+ <br> <strong>Sex</strong>: Male, Female <br> <strong>Location</strong>: Care Home, Home/Non-institution, Hospital, Other institution</td>
+</tr>
+</tbody>
+</table>
+<h2 id="hospitalisations-testing-and-other-management-data-available--scotland">
+  Hospitalisations, testing and other management data available – SCOTLAND
+  <a class="anchor" href="#hospitalisations-testing-and-other-management-data-available--scotland">#</a>
+</h2>
+<p>
+  <a href="https://statistics.gov.scot/resource?uri=http%3A%2F%2Fstatistics.gov.scot%2Fdata%2Fcoronavirus-covid-19-management-information">Scotland</a></p>
+<p>These are weekly counts, but not all information is available for all weeks. This table provides a summary of variables available. Please see URL for more complete meta-data.</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Spatial Scale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adult Care Homes (suspected cases, staff absences, returns of information)</td>
+<td>Scotland, Health Board</td>
+</tr>
+<tr>
+<td>Ambulance attendances (suspected COVID-19, suspected COVID-19 taken to hospital, total)</td>
+<td>Scotland, Health Board</td>
+</tr>
+<tr>
+<td>COVID-19 in ICU (suspected, confirmed, total)</td>
+<td>Scotland, Health Board</td>
+</tr>
+<tr>
+<td>COVID-19 in Hospital (suspected, confirmed, total)</td>
+<td>Scotland, Health Board</td>
+</tr>
+<tr>
+<td>Calls (Coronavirus helpline, NHS24 111)</td>
+<td>Scotland, Health Board</td>
+</tr>
+<tr>
+<td>Delayed discharges</td>
+<td>Scotland, Health Board</td>
+</tr>
+<tr>
+<td>NHS workforce COVID-19 absences (All staff, medical &amp; dental, nursing &amp; midwifery, other)</td>
+<td>Scotland, Health Board</td>
+</tr>
+<tr>
+<td>Number of COVID-19 confirmed deaths registered</td>
+<td>Scotland, Health Board</td>
+</tr>
+<tr>
+<td>Testing – cumulative counts (negative, positive, total)</td>
+<td>Scotland, Health Board</td>
+</tr>
+<tr>
+<td>Testing – daily positive</td>
+<td>Scotland, Health Board</td>
+</tr>
+<tr>
+<td>Testing – cumulative &amp; daily NHS Labs</td>
+<td>Scotland, Health Board</td>
+</tr>
+<tr>
+<td>Testing – cumulative &amp; daily Regional Testing Centres</td>
+<td>Scotland, Health Board</td>
+</tr>
+</tbody>
+</table>
+<p>Further information available on Public Health Scotland 
+  <a href="https://publichealthscotland.scot/our-areas-of-work/sharing-our-data-and-intelligence/coronavirus-covid-19-data/">data dashboard</a></p>
+<h2 id="individual-level-hospitalisations-testing-and-other-health-data--scotland">
+  Individual level Hospitalisations, testing and other health data – SCOTLAND
+  <a class="anchor" href="#individual-level-hospitalisations-testing-and-other-health-data--scotland">#</a>
+</h2>
+<p>Public Health Scotland (previously ISD) can provide individual level data. These are subject to application and due to strict information governance, need to be accessed via a Safe Haven. Only named people can access the Safe Haven to undertake analysis. The outputs are checked for statistical disclosure control to avoid any identification of individuals. This means we are only likely to produce statistical parameters from the data.</p>
+<p>Further information: 
+  <a href="https://www.isdscotland.org/Products-and-Services/eDRIS/COVID-19/">here</a> and 
+  <a href="https://www.informationgovernance.scot.nhs.uk/pbpphsc/">here</a></p>
+<h2 id="summary-of-variables-requested-and-possible-data-products">
+  Summary of variables requested and possible data products
+  <a class="anchor" href="#summary-of-variables-requested-and-possible-data-products">#</a>
+</h2>
+<p>Numbers of hospital admissions, times of admission to hospital, testing (multiple tests incl. previous test negative score if available), entry and exit from ICU and time of discharge or death, treatment &amp; medication by week, age group, deprivation quintile, health board.</p>
+<h2 id="demographic-data-sources">
+  Demographic data sources
+  <a class="anchor" href="#demographic-data-sources">#</a>
+</h2>
+<p>In general, these data sources can be split into data collected at 2011 Census and therefore available for the whole population of UK at different spatial scales and government surveys which are more up to date but on a sample of the population and therefore fine grained spatial scales are more limited. Population estimates by age, sex and spatial scales are available annually.</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Data Source</th>
+<th>Spatial Scale</th>
+<th>Social Scale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Population counts</td>
+<td>NRS – mid-year estimates 2018 <br> ONS – mid-year estimates 2018</td>
+<td>Datazone <br> LSOA, MSOA</td>
+<td>5 year age bands, sex, area deprivation</td>
+</tr>
+<tr>
+<td>Household Type counts</td>
+<td>Census - 2011</td>
+<td>Output area, Datazone (Scotland) <br> LSOA, MSOA (England)</td>
+<td>5 year age bands, sex, area deprivation</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Notes:</strong> Most UK surveys will have some detail on households so data products/analysis may be able to produce estimates for different households (<em>e.g.</em> travel diaries using the National Travel Survey)</p>
+<h2 id="other-data-sources">
+  Other data sources
+  <a class="anchor" href="#other-data-sources">#</a>
+</h2>
+<p>Microdata for surveys can be downloaded from the 
+  <a href="https://www.ukdataservice.ac.uk/">UK Data Archive</a></p>
+<table>
+<thead>
+<tr>
+<th>Survey/Source</th>
+<th>Summary of topics</th>
+<th>Population Coverage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><sup>1</sup>Census Flow Data</td>
+<td>Flows of individuals between origins and destinations</td>
+<td>UK 2011</td>
+</tr>
+<tr>
+<td>2011 Census</td>
+<td>Industry, economic status (social class), household type, ethnicity, age, sex <br> (possible to add area deprivation)</td>
+<td>UK 2011 (possible LSOA/datazone available)</td>
+</tr>
+<tr>
+<td>National Travel Survey</td>
+<td>Travel (mode, purpose, stages of trip, where) by age, sex, household type</td>
+<td>England 2018 (travelling within GB)</td>
+</tr>
+<tr>
+<td><sup>2</sup>UK Time Use Survey</td>
+<td>Data on how people spend their time during the day and over time. Sample of aged 8 years and over in the UK. <br> Age, sex, household type, economic status, industry sector</td>
+<td>UK 2014-15</td>
+</tr>
+<tr>
+<td>Scottish Household Survey</td>
+<td>Age, sex, household type, ethnicity economic status, area deprivation <br> Travel diaries (purpose, mode)</td>
+<td>Scotland 2018 (Heath Board, Local Authority)</td>
+</tr>
+<tr>
+<td>OS Mastermap Topography</td>
+<td>Map data showing landcover types, such as building, gardens, woodland, grassland, and important buildings (schools, hospitals, religious buildings, sports facilities, transit stations)</td>
+<td>UK wide (Local Authority, Health Board, Data Zone)</td>
+</tr>
+<tr>
+<td>School Location Details</td>
+<td>school names, addresses, pupil rolls, FTE numbers of teachers, urban/rural classification, denomination and proportion of pupils from minority ethnic groups</td>
+<td>Scotland 2018 (Local Authority, Health Board, Datazone)</td>
+</tr>
+<tr>
+<td>Synthetic Population</td>
+<td>Individual microsimulation base data of 2011 Census. Leeds Uni happy to provide more information and support.</td>
+<td>England &amp; Wales 2011 (MSOA)</td>
+</tr>
+<tr>
+<td>Locations of retail outlets</td>
+<td>RAMP Urban Analytics created retail locations and movements using 
+  <a href="https://www.geolytix.co.uk/#!geodata">geolytix</a></td>
+<td>England (MSOA)</td>
+</tr>
+<tr>
+<td>Scottish Local Government Spatial Data</td>
+<td>Range of data that Local Authorities collect (housing land use, planning, environment, school catchment areas)</td>
+<td>Scotland</td>
+</tr>
+<tr>
+<td>Scottish Postcode Density</td>
+<td>Digital boundary for every live postcode</td>
+<td>Scotland</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Notes:</strong></p>
+<p><sup>1</sup> Can only be accessed by UK academic or government agencies. We are pursuing SCRC Consortium-wide access to this data set.</p>
+<p><sup>2</sup> RAMP Urban Analytics have carried out analysis of this data set. We are pursuing access and data sharing.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+  <div><a class="flex align-center" href="https://github.com/ScottishCovidResponse/hugo_source_files/commit/8287aa7c0a86e989683313bbb70ee055f6279511" title='Last modified by soniamitchell | March 30, 2021' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>March 30, 2021</span>
+    </a>
+  </div>
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/ScottishCovidResponse/hugo_source_files/tree/master/content//docs/data/sources_and_products.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#data-sources-and-products">Data sources and products</a>
+      <ul>
+        <li><a href="#administrative-spatial-scales-in-uk">Administrative spatial scales in UK</a>
+          <ul>
+            <li><a href="#england--wales-onshttpswwwonsgovuk">England &amp; Wales <a href="https://www.ons.gov.uk/">ONS</a></a></li>
+            <li><a href="#scotland-nrshttpswwwnrscotlandgovuk-">Scotland <a href="https://www.nrscotland.gov.uk/">NRS</a></a></li>
+          </ul>
+        </li>
+        <li><a href="#epidemic-data">Epidemic data</a></li>
+        <li><a href="#sources-of-review-articles-and-literature-for-epidemic-parameters">Sources of review articles and literature for epidemic parameters</a></li>
+        <li><a href="#literature-searches-in-progress">Literature searches in progress</a></li>
+        <li><a href="#information-about-serology-based-tests-for-covid-19">Information about serology-based tests for COVID-19</a></li>
+        <li><a href="#ons-coronavirus-infection-survey-pilot">ONS Coronavirus infection survey pilot</a></li>
+        <li><a href="#health-data-sources-for-progress-of-covid-19-epidemic-in-uk">Health Data sources for progress of COVID-19 epidemic in UK</a></li>
+        <li><a href="#data-available-at-high-level-spatial-scale-and-no-social-stratification">Data Available at high level spatial scale and no social stratification</a></li>
+        <li><a href="#other-sources-of-data">Other Sources of data</a></li>
+        <li><a href="#data-available-with-social-factors">Data available with social factors</a></li>
+        <li><a href="#hospitalisations-testing-and-other-management-data-available--scotland">Hospitalisations, testing and other management data available – SCOTLAND</a></li>
+        <li><a href="#individual-level-hospitalisations-testing-and-other-health-data--scotland">Individual level Hospitalisations, testing and other health data – SCOTLAND</a></li>
+        <li><a href="#summary-of-variables-requested-and-possible-data-products">Summary of variables requested and possible data products</a></li>
+        <li><a href="#demographic-data-sources">Demographic data sources</a></li>
+        <li><a href="#other-data-sources">Other data sources</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
